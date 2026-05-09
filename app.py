@@ -5,7 +5,7 @@ import datetime
 import os
 
 
-client=InferenceClient(token=os.genenv(HF_TOKEN))
+client=InferenceClient(token=os.getenv(HF_TOKEN))
 MODEL="stabilityai/stable-diffusion-xl-base-1.0"
 
 st.set_page_config(page_title="My Image Generator")
